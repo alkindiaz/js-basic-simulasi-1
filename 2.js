@@ -25,3 +25,32 @@
  * 
  * Hint: boleh menggunakan built-in function toFixed().
  */
+
+ let tipeBensin = "solar";
+ let uang = 30000;
+ let vol;
+ 
+ if(uang) {
+     switch(tipeBensin) {
+         case "solar":
+             vol = (uang/5000).toFixed();
+             console.log(`Mobil anda telah terisi ${tipeBensin} sebanyak ${vol} lt`)
+             break;
+     
+         case "premium":
+             vol = (uang/7500).toFixed()
+             console.log(`Mobil anda telah terisi ${tipeBensin} sebanyak ${vol} lt`)
+             break;
+     
+         case "pertamax":
+             vol = (uang/10000).toFixed()
+             console.log(`Mobil anda telah terisi ${tipeBensin} sebanyak ${vol} lt`)
+             break;
+         
+         default: 
+             console.log("'Tidak ada tipe bensin dan uang'.")
+             break;
+     }
+ } else {
+     console.log("'Tidak ada tipe bensin dan uang'.")    
+ } 

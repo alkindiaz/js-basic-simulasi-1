@@ -14,3 +14,27 @@
  * 
  * Tampilkan tarif harga sesuai umur dan tinggi seorang anak!
  */
+
+ let umur = 11
+ let tinggi = 170 
+ let tarif;
+ if(umur <= 1) {
+     console.log("Dilarang masuk")
+ } else if (umur <= 3) {
+     tarif = 30000
+     if (tinggi > 70) {
+         tarif += 10000
+     }
+     console.log(`umur ${umur} tarif => Rp ${tarif}`)
+ } else if (umur <= 7) {
+     tarif = 40000
+     if(tinggi > 120) tarif += 15000
+     console.log(`umur ${umur} tarif => Rp ${tarif}`)
+ } else if (umur <= 10) {
+     tarif = 50000
+     if(tinggi > 150) tarif += 20000
+     console.log(`umur ${umur} tarif => Rp ${tarif}`)
+ } else {
+     tarif = 80000
+     console.log(`umur ${umur} tarif => Rp ${tarif}`)
+ }
